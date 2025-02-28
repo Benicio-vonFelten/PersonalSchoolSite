@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
+    <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <h2>⚠ ACHTUNG ⚠</h2>
+            <p>Diese Firmen sind selbst erforscht und enthalten Fehler. Sie dienen nur als Bewerbungshilfe und ersetzen keinen offiziellen Bewerbungsunterricht.</p>
+            <button id="close-popup" class="popup-button" disabled>Verstanden <span id="countdown">(5s)</span></button>
+        </div>
+    </div>  
     <header>
         <h1>Praktikumsfirmen in der Schweiz</h1>
         <nav>
@@ -79,6 +85,47 @@
     </footer>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const popup = document.getElementById("popup");
+            const closeButton = document.getElementById("close-popup");
+            const countdownText = document.getElementById("countdown");
+    
+            popup.style.display = "flex"; // Popup anzeigen
+            
+            // Sanfte Einblendung mit Animation
+            setTimeout(() => {
+                popup.style.opacity = "1";
+                popup.style.transform = "translateY(0)";
+            }, 50);
+    
+            // Countdown Timer
+            let seconds = 5;
+            countdownText.textContent = `(${seconds}s)`;
+    
+            const countdownInterval = setInterval(() => {
+                seconds--;
+                countdownText.textContent = `(${seconds}s)`;
+    
+                if (seconds <= 0) {
+                    clearInterval(countdownInterval);
+                    closeButton.disabled = false;
+                    closeButton.removeAttribute("disabled"); // WICHTIG: Entfernt das "disabled"-Attribut
+                    closeButton.textContent = "Verstanden";
+                    closeButton.style.background = "#00ffcc";
+                    closeButton.style.cursor = "pointer";
+                }
+            }, 1000);
+    
+            // Event-Listener für Button (Popup schließen)
+            closeButton.addEventListener("click", function() {
+                popup.style.opacity = "0";
+                popup.style.transform = "translateY(-20px)";
+                setTimeout(() => {
+                    popup.style.display = "none";
+                }, 300); // Nach 300ms endgültig ausblenden
+            });
+        });
+    
         function searchCompanies() {
             const searchValue = document.getElementById("search").value.toLowerCase();
             const rows = document.querySelectorAll(".company-table tbody tr");

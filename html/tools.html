@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools für WISS</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Correct file path -->
+    <script defer src="../js/main.js"></script> <!-- Correct file path -->
+</head>
+<body>
+
+    <header>
+        <h1>Tools für deine Ausbildung an der WISS</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">🏠 Home</a></li>
+                <li><a href="documents.html">📂 Dokumente</a></li>
+                <li><a href="praktikum.html">🏢 Praktikum</a></li>
+                <li><a href="tipps.html">💡 Tipps</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tools-container">
+        <section class="search-tools">
+            <input type="text" id="search" placeholder="Suchen nach Tools..." oninput="searchTools()">
+        </section>
+
+        <section class="tools-cards">
+            <!-- Tool: Yed Graph Editor -->
+            <div class="tool-card" data-category="graph">
+                <h3><a href="https://www.yworks.com/products/yed" target="_blank">Yed Graph Editor</a></h3>
+                <p>Ein leistungsstarkes Tool für Diagrammerstellung und Graphenbearbeitung.</p>
+            </div>
+
+            <!-- Tool: Filius -->
+            <div class="tool-card" data-category="network">
+                <h3><a href="https://www.filius.uni-bremen.de/" target="_blank">Filius</a></h3>
+                <p>Simuliert Netzwerke für Lehrzwecke.</p>
+            </div>
+
+            <!-- Tool: Draw.io -->
+            <div class="tool-card" data-category="diagram">
+                <h3><a href="https://app.diagrams.net/" target="_blank">Draw.io</a></h3>
+                <p>Diagramme und Flowcharts erstellen.</p>
+            </div>
+
+            <!-- Tool: ChatGPT -->
+            <div class="tool-card" data-category="ai">
+                <h3><a href="https://chat.openai.com/" target="_blank">ChatGPT</a></h3>
+                <p>KI-gestützter Assistent für jede Aufgabe.</p>
+            </div>
+
+            <!-- Tool: VirtualBox -->
+            <div class="tool-card" data-category="virtualization">
+                <h3><a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a></h3>
+                <p>Virtuelle Maschinen erstellen und verwalten.</p>
+            </div>
+
+            <!-- Tool: ISO-Dateien -->
+            <div class="tool-card" data-category="os">
+                <h3>ISO-Dateien</h3>
+                <p>Installiere Betriebssysteme wie Windows Server 2022, Ubuntu Server, und Kali Linux.</p>
+                <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server" target="_blank" class="tool-link">Windows Server 2022</a><br>
+                <a href="https://ubuntu.com/download/server" target="_blank" class="tool-link">Ubuntu Server</a><br>
+                <a href="https://www.kali.org/get-kali/" target="_blank" class="tool-link">Kali Linux</a>
+            </div>
+
+            <!-- Tool: MySQL Workbench 8.0 -->
+            <div class="tool-card" data-category="database">
+                <h3><a href="https://dev.mysql.com/downloads/workbench/" target="_blank">MySQL Workbench 8.0</a></h3>
+                <p>Datenbankverwaltung und Modellierung.</p>
+            </div>
+
+            <!-- Tool: Advanced IP Scanner -->
+            <div class="tool-card" data-category="network">
+                <h3><a href="https://www.advanced-ip-scanner.com/" target="_blank">Advanced IP Scanner</a></h3>
+                <p>Netzwerkscanner und Überwachungs-Tool.</p>
+            </div>
+
+            <!-- Tool: Cisco Packet Tracer -->
+            <div class="tool-card" data-category="network">
+                <h3><a href="https://www.netacad.com/courses/packet-tracer" target="_blank">Cisco Packet Tracer</a></h3>
+                <p>Netzwerksimulation von Cisco.</p>
+            </div>
+
+            <!-- Tool: Eclipse -->
+            <div class="tool-card" data-category="ide">
+                <h3><a href="https://www.eclipse.org/downloads/" target="_blank">Eclipse</a></h3>
+                <p>IDE für Java- und andere Programmierungen.</p>
+            </div>
+
+            <!-- Tool: Fiddler -->
+            <div class="tool-card" data-category="debugging">
+                <h3><a href="https://www.telerik.com/fiddler" target="_blank">Fiddler</a></h3>
+                <p>HTTP-Debugging und Proxy-Tool.</p>
+            </div>
+
+            <!-- Tool: Everything -->
+            <div class="tool-card" data-category="file-search">
+                <h3><a href="https://www.voidtools.com/" target="_blank">Everything</a></h3>
+                <p>Superschnelle Windows-Dateisuche.</p>
+            </div>
+
+            <!-- Tool: Git for Windows -->
+            <div class="tool-card" data-category="version-control">
+                <h3><a href="https://gitforwindows.org/" target="_blank">Git for Windows</a></h3>
+                <p>Versionskontrolle und Repository-Verwaltung.</p>
+            </div>
+
+            <!-- Tool: Malwarebytes -->
+            <div class="tool-card" data-category="security">
+                <h3><a href="https://www.malwarebytes.com/" target="_blank">Malwarebytes</a></h3>
+                <p>Schutz vor Malware und Cyberbedrohungen.</p>
+            </div>
+
+            <!-- Tool: ProtonVPN -->
+            <div class="tool-card" data-category="vpn">
+                <h3><a href="https://protonvpn.com/" target="_blank">ProtonVPN</a></h3>
+                <p>Sicheres und günstiges VPN.</p>
+            </div>
+
+            <!-- Tool: PowerToys -->
+            <div class="tool-card" data-category="utilities">
+                <h3><a href="https://github.com/microsoft/PowerToys" target="_blank">PowerToys</a></h3>
+                <p>Sammlung von Dienstprogrammen für Power-User.</p>
+            </div>
+
+            <!-- Tool: Visual Studio Code -->
+            <div class="tool-card" data-category="editor">
+                <h3><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></h3>
+                <p>Lightweight-Code-Editor.</p>
+            </div>
+
+            <!-- Tool: Zeal -->
+            <div class="tool-card" data-category="documentation">
+                <h3><a href="https://zealdocs.org/" target="_blank">Zeal</a></h3>
+                <p>Offline-Dokumentationsbrowser.</p>
+            </div>
+
+            <!-- Tool: WinSCP -->
+            <div class="tool-card" data-category="file-transfer">
+                <h3><a href="https://winscp.net/" target="_blank">WinSCP</a></h3>
+                <p>Dateitransfer über SFTP und FTP.</p>
+            </div>
+
+            <!-- Tool: FileZilla -->
+            <div class="tool-card" data-category="file-transfer">
+                <h3><a href="https://filezilla-project.org/" target="_blank">FileZilla</a></h3>
+                <p>Open-Source-FTP-Lösung.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Nicht von <span class="wiss-link">WISS</span> gesponsert, erstellt oder unterstützt.</p>
+    </footer>
+
+    <script>
+        function searchTools() {
+            const searchValue = document.getElementById('search').value.toLowerCase();
+            const cards = document.querySelectorAll('.tool-card');
+            cards.forEach(card => {
+                const toolName = card.querySelector('h3').textContent.toLowerCase();
+                if (toolName.includes(searchValue)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

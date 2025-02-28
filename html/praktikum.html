@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikumsfirmen</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Praktikumsfirmen in der Schweiz</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">🏠 Home</a></li>
+                <li><a href="tools.html">🛠 Tools</a></li>
+                <li><a href="documents.html">📂 Dokumente</a></li>
+                <li><a href="tipps.html">💡 Tipps</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="praktikum-container">
+        <br>
+        <br>
+        <!-- Search Bar -->
+        <section class="search-praktikum">
+            <input type="text" id="search" placeholder="🔍 Unternehmen suchen..." oninput="searchCompanies()">
+        </section>
+
+        <!-- Praktikum Table -->
+        <section class="praktikum-list">
+            <table class="company-table">
+                <thead>
+                    <tr>
+                        <th>Unternehmen</th>
+                        <th>Standort</th>
+                        <th>Jobbereich</th>
+                        <th>Kontakt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>EvoSys AG</td><td>Thun</td><td>Applikationsentwickler, Plattformentwickler</td><td>info@evosys.ch | +41 31 351 51 15</td></tr>
+                    <tr><td>Care4IT</td><td>Zürich</td><td>Plattformentwickler, ICT-Fachmann</td><td>info@care4it.ch | +41 43 388 20 72</td></tr>
+                    <tr><td>Init7</td><td>Winterthur</td><td>Plattformentwickler</td><td>personal@init7.ch | +41 44 315 44 00</td></tr>
+                    <tr><td>Intecso</td><td>Option</td><td>Applikationsentwickler</td><td>info@intecso.ch | +41 43 500 18 18</td></tr>
+                    <tr><td>Comvenis AG</td><td>Winterthur</td><td>Applikationsentwickler, Plattformentwickler</td><td>info@comvenis.ch</td></tr>
+                    <tr><td>Variosystems</td><td>Steinach</td><td>Plattformentwickler, ICT-Fachmann</td><td>sales@variosystems.ch | +41 71 447 87 00</td></tr>
+                    <tr><td>Optimio AG</td><td>Glattbrugg</td><td>Applikationsentwickler, Plattformentwickler</td><td>servicedesk@optimio.com | +41 44 330 33 33</td></tr>
+                    <tr><td>Highsystem AG</td><td>Winterthur</td><td>Plattformentwickler, ICT-Fachmann</td><td>info@highsystem.ch | +41 43 843 20 00</td></tr>
+                    <tr><td>TV Factory AG</td><td>Zürich</td><td>ICT-Fachmann, Plattformentwickler</td><td>info@tvfactory.ch | +41 43 521 62 00</td></tr>
+                    <tr><td>ROWA Computer AG</td><td>Frick</td><td>Plattformentwickler</td><td>support@rowa.ch | +41 62 865 20 20</td></tr>
+                    <tr><td>Login</td><td>Olten</td><td>Applikationsentwickler</td><td>bewerbung@login.org | +41 0848 822 422</td></tr>
+                    <tr><td>Freestar Informatik</td><td>Zürich</td><td>ICT-Fachmann, Applikationsentwickler, Plattformentwickler</td><td>informatik@freestar.ch | +41 44 360 93 03</td></tr>
+                    <tr><td>Videotronic</td><td>Regensdorf</td><td>ICT-Fachmann, Plattformentwickler</td><td>info@videotronic.ch | +41 44 843 90 00</td></tr>
+                    <tr><td>Mobilezone</td><td>Rotkreuz</td><td>Plattformentwickler</td><td>mobilezoneholding@mobilezone.ch</td></tr>
+                    <tr><td>Suva</td><td>Zürich</td><td>ICT-Fachmann, Plattformentwickler</td><td>kundendienst@suva.ch | +41 58 411 12 12</td></tr>
+                    <tr><td>ICLS</td><td>Horgen</td><td>Plattformentwickler</td><td>info.hr@zhaw.ch | +41 58 934 48 48</td></tr>
+                    <tr><td>Oracle</td><td>Zürich</td><td>Applikationsentwickler, Plattformentwickler</td><td>info@oracle.ch | +41 22 556 26 27</td></tr>
+                    <tr><td>BKW</td><td>Zug</td><td>Plattformentwickler</td><td>info@bkw.ch | +41 58 477 51 11</td></tr>
+                    <tr><td>Stadt Zürich</td><td>Zürich</td><td>ICT-Fachmann, Plattformentwickler, Applikationsentwickler</td><td>personalamt@pa.zh.ch</td></tr>
+                    <tr><td>Open-Circle</td><td>Zürich</td><td>Plattformentwickler</td><td>info@open-circle.ch | +41 44 552 13 00</td></tr>
+                    <tr><td>redIT</td><td>Zürich</td><td>Applikationsentwickler, Plattformentwickler</td><td>info@redit.ch | +41 41 747 50 50</td></tr>
+                    <tr><td>KastGroup</td><td>Wallisellen</td><td>Plattformentwickler</td><td>info@kastgroup.com | +41 44 521 35 61</td></tr>
+                    <tr><td>Igeeks</td><td>Zürich</td><td>Plattformentwickler</td><td>info@igeeks.ch | +41 58 058 00 00</td></tr>
+                    <tr><td>WISS</td><td>Zürich</td><td>ICT-Fachmann</td><td>info@wiss.ch | +41 58 404 42 28</td></tr>
+                    <tr><td>Abraxas</td><td>Zürich</td><td>Plattformentwickler, Applikationsentwickler</td><td>info@abraxas.ch | +41 58 660 00 00</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+
+    <footer>
+        <p>Nicht von <span class="wiss-link">WISS</span> gesponsert, erstellt oder unterstützt.</p>
+    </footer>
+
+    <script>
+        function searchCompanies() {
+            const searchValue = document.getElementById("search").value.toLowerCase();
+            const rows = document.querySelectorAll(".company-table tbody tr");
+
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(searchValue) ? "" : "none";
+            });
+        }
+    </script>
+
+</body>
+</html>

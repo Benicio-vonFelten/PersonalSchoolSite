@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipps</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/main.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Tipps für die WISS</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">🏠 Home</a></li>
+                <li><a href="tools.html">🛠 Tools</a></li>
+                <li><a href="documents.html">📂 Dokumente</a></li>
+                <li><a href="praktikum.html">💼 Praktikum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tipps-container">
+        <section class="search-tipps">
+            <input type="text" id="search" placeholder="Suchen nach Tipps..." oninput="searchTipps()">
+        </section>
+
+        <section class="tipps-cards">
+            <div class="tipps-card" data-category="drucken">
+                <h3><a href="tipps/drucken.html">🖨️ Drucken</a></h3>
+                <p>Nutze den WISS-Druckservice effizient, indem du große Dokumente doppelseitig druckst.</p>
+            </div>
+
+            <div class="tipps-card" data-category="internet">
+                <h3><a href="tipps/schul-internet.html">🌐 Schul-Internet</a></h3>
+                <p>Falls das WISS-WLAN langsam ist, versuche das mobile Netz oder wechsle zu einem anderen Access Point.</p>
+            </div>
+
+            <div class="tipps-card" data-category="dozenten">
+                <h3><a href="tipps/dozenten.html">👨‍🏫 Dozenten</a></h3>
+                <p>Bleib respektvoll, aber stelle gezielte Fragen – Dozenten helfen eher, wenn du Interesse zeigst.</p>
+            </div>
+
+            <div class="tipps-card" data-category="essen">
+                <h3><a href="tipps/essen.html">🍽️ Essen</a></h3>
+                <p>Bringe dein eigenes Essen mit, um Geld zu sparen – die Mikrowellen in der WISS sind frei nutzbar.</p>
+            </div>
+
+            <div class="tipps-card" data-category="trinken">
+                <h3><a href="tipps/trinken.html">🥤 Trinken</a></h3>
+                <p>Wasserflaschen auffüllen an den Wasserspendern in der Schule spart viel Geld.</p>
+            </div>
+
+            <div class="tipps-card" data-category="benefits">
+                <h3><a href="tipps/benefits.html">🎁 Benefits</a></h3>
+                <p>Nutze Schülervergünstigungen wie Microsoft Imagine oder Studierendenrabatte für Software & Hardware.</p>
+            </div>
+
+            <div class="tipps-card" data-category="lohnanalyse">
+                <h3><a href="tipps/lohnanalyse.html">💰 Lohnanalyse</a></h3>
+                <p>Vergleiche deine Praktikumsvergütung mit den aktuellen Durchschnittswerten auf Lohnanalyse-Websites.</p>
+            </div>
+
+            <div class="tipps-card" data-category="vorbereitungen">
+                <h3><a href="tipps/vorbereitung.html">📑 Vorbereitungen</a></h3>
+                <p>Vor jeder Prüfung mindestens eine alte Prüfung oder Zusammenfassung durchgehen.</p>
+            </div>
+
+            <div class="tipps-card" data-category="praktikum">
+                <h3><a href="tipps/praktikum.html">💼 Praktikum</a></h3>
+                <p>Bewirb dich frühzeitig! Unternehmen vergeben Praktikumsplätze oft schon Monate im Voraus.</p>
+            </div>
+
+            <div class="tipps-card" data-category="noten-empfehlung">
+                <h3><a href="tipps/noten-empfehlung.html">📊 Noten-Empfehlung</a></h3>
+                <p>Konzentriere dich auf die **sehr wichtigen Module** – diese zählen oft mehr in der Endnote.</p>
+            </div>
+
+            <div class="tipps-card" data-category="absenzen">
+                <h3><a href="tipps/absenzen.html">📅 Absenzen</a></h3>
+                <p>Zu viele Absenzen können zum Ausschluss aus der Schule führen – halte deine Fehlzeiten im Blick.</p>
+            </div>
+
+            <div class="tipps-card" data-category="tocco">
+                <h3><a href="tipps/tocco.html">🖥️ Tocco</a></h3>
+                <p>Logge dich regelmäßig in Tocco ein, um Noten, Prüfungen und Dokumente im Blick zu behalten.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Nicht von <span class="wiss-link">WISS</span> gesponsert, erstellt oder unterstützt.</p>
+    </footer>
+    <script>
+        function searchTipps() {
+            const searchValue = document.getElementById('search').value.toLowerCase();
+            const cards = document.querySelectorAll('.tipps-card');
+            cards.forEach(card => {
+                const toolName = card.querySelector('h3').textContent.toLowerCase();
+                if (toolName.includes(searchValue)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

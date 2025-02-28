@@ -1,0 +1,34 @@
+{
+    "modules": [
+        {
+            "id": "117",
+            "name": "Informatik- und Netz Infrastruktur",
+            "files": ["untitled-1.txt", "untitled.txt"]
+        },
+        {
+            "id": "122",
+            "name": "Abläufe mit einer Scriptsprache automatisieren",
+            "files": ["script1.js", "script2.js"]
+        },
+        {
+            "id": "231",
+            "name": "Datenschutz und Datensicherheit anwenden",
+            "files": ["datasec.txt"]
+        },
+        {
+            "id": "319",
+            "name": "Applikationen entwerfen und implementieren",
+            "files": ["appdesign.txt"]
+        },
+        {
+            "id": "109",
+            "name": "Dienste in der Public Cloud betreiben und überwachen",
+            "files": ["cloudservices.txt"]
+        },
+        {
+            "id": "143",
+            "name": "Backup- und Restore-Systeme implementieren",
+            "files": ["backup-restore.txt"]
+        }
+    ]
+}

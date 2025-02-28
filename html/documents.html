@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumente für WISS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <h2>⚠ ACHTUNG ⚠</h2>
+            <p>Diese Spicks und Dokumente sind selbst erstellt und enthalten Fehler. Sie dienen nur als Lernhilfe und ersetzen keine offizielle Prüfungsvorbereitung.</p>
+            <button id="close-popup" class="popup-button" disabled>Verstanden <span id="countdown">(5s)</span></button>
+        </div>
+    </div>          
+
+    <header>
+        <h1>Dokumente für deine Ausbildung an der WISS</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">🏠 Home</a></li>
+                <li><a href="../html/tools.html">🛠 Tools</a></li>
+                <li><a href="praktikum.html">💼 Praktikum</a></li>
+                <li><a href="tipps.html">💡 Tipps</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="documents-container">
+        <!-- Search Bar -->
+        <section class="search-documents">
+            <input type="text" id="search" placeholder="Suchen nach Modulen..." oninput="searchDocuments()">
+        </section>
+
+        <!-- Note about Spick Modules -->
+        <section class="spick-note">
+            <p> &#8203; &#8203; &#8203; &#8203; &#8203;<strong>Hinweis:</strong> Alle mit gelbem Rand versehenen Module enthalten einen Spick!</p>
+        </section>
+
+        <!-- Modules Cards -->
+        <section class="tools-cards">
+            <!-- Module 117 -->
+            <div class="tool-card spick" data-category="network">
+                <h3><a href="../documents/117/117.html">117 - Informatik- und Netz Infrastruktur</a></h3>
+                <p>Informatik- und Netz Infrastruktur für ein kleines Unternehmen realisieren.</p>
+            </div>
+
+            <!-- Module 122 -->
+            <div class="tool-card spick" data-category="network">
+                <h3><a href="../documents/122/122.html">122 - Abläufe mit einer Scriptsprache automatisieren</a></h3>
+                <p>Abläufe mit einer Scriptsprache automatisieren.</p>
+            </div>
+
+            <!-- Module 123 -->
+            <div class="tool-card spick" data-category="app-development">
+                <h3><a href="../documents/123/123.html">123 - Serverdienste in Betrieb nehmen</a></h3>
+                <p>Dokumentation der Fallstudie für Modul 123.</p>
+            </div>
+
+            <!-- Module 129 -->
+            <div class="tool-card" data-category="network">
+                <h3><a href="../documents/129/129.html">129 - LAN-Komponenten in Betrieb nehmen</a></h3>
+                <p>Projektarbeit für das Modul 129. Hier findest du alle relevanten Dokumente und Dateien.</p>
+            </div>
+
+            <!-- Module 141 -->
+            <div class="tool-card spick" data-category="network">
+                <h3><a href="../documents/141/141.html">141 - Netzwerk- und Systemadministration</a></h3>
+                <p>Netzwerk- und Systemadministration für ein kleines Unternehmen.</p>
+            </div>
+
+            <!-- Module 158 -->
+            <div class="tool-card" data-category="documentation">
+                <h3><a href="../documents/158/158.html">158 - Software-Migration planen und durchführen</a></h3>
+                <p>Dokumentation für das Modul 158.</p>
+            </div>
+
+            <!-- Module 162 -->
+            <div class="tool-card spick" data-category="network">
+                <h3><a href="../documents/162/162.html">162 - Netzwerksicherheit und -konfiguration</a></h3>
+                <p>Netzwerksicherheit und Konfiguration für ein kleines Unternehmen.</p>
+            </div>
+
+            <!-- Module 164 -->
+            <div class="tool-card spick" data-category="network">
+                <h3><a href="../documents/164/164.html">164 - Datenbanken erstellen und Daten einfügen</a></h3>
+                <p>Weitere Informationen für das Modul 164.</p>
+            </div>
+
+            <!-- Module 184 -->
+            <div class="tool-card" data-category="network">
+                <h3><a href="../documents/184/184.html">184 - Netzwerksicherheit implementieren</a></h3>
+                <p>Fallstudie Dokumentation und Netzwerkplan für das Modul 184.</p>
+            </div>
+
+            <!-- Module 188 -->
+            <div class="tool-card" data-category="network">
+                <h3><a href="../documents/188/188.html">188 - Services betreiben, warten und überwachen</a></h3>
+                <p>IT-Betriebsdokumentation für das Modul 188.</p>
+            </div>
+
+            <!-- Module 231 -->
+            <div class="tool-card" data-category="security">
+                <h3><a href="../documents/231/231.html">231 - Datenschutz und Datensicherheit anwenden</a></h3>
+                <p>Datenschutz und Datensicherheit anwenden.</p>
+            </div>
+
+            <!-- Module 254 -->
+            <div class="tool-card spick" data-category="network">
+                <h3><a href="../documents/254/254.html">254 - Geschäftsprozesse im eigenen Berufsumfeld beschreiben</a></h3>
+                <p>Beschreibung der Module und relevanten Themen.</p>
+            </div>
+
+            <!-- Module 293 -->
+            <div class="tool-card spick" data-category="network">
+                <h3><a href="../documents/293/293.html">293 - Webauftritt erstellen und veröffentlichen</a></h3>
+                <p>Beschreibung des Moduls 293 mit den relevanten Dokumenten und Dateien.</p>
+            </div>
+
+            <!-- Module 306 -->
+            <div class="tool-card" data-category="project">
+                <h3><a href="../documents/306/306.html">306 - Kleinprojekte im eigenen Berufsumfeld abwickeln</a></h3>
+                <p>Dokumente und Materialien zu den projektbezogenen Übungen für Modul 306.</p>
+            </div>
+
+            <!-- Module 319 -->
+            <div class="tool-card" data-category="app-development">
+                <h3><a href="../documents/319/319.html">319 - Applikationen entwerfen und implementieren</a></h3>
+                <p>Applikationen entwerfen und implementieren.</p>
+            </div>
+
+            <!-- Module 431 -->
+            <div class="tool-card" data-category="network">
+                <h3><a href="../documents/431/431.html">431 - Aufträge im eigenen Berufsumfeld selbstständig durchführen</a></h3>
+                <p>Dokumente und Materialien für Modul 431.</p>
+            </div>
+
+            <!-- ABU Module -->
+            <div class="tool-card" data-category="network">
+                <h3><a href="../documents/ABU/ABU.html">ABU - Allgemeinbildung</a></h3>
+                <p>Dokumente und Materialien für ABU Modul.</p>
+            </div>
+
+            <!-- Mathematik Module -->
+            <div class="tool-card" data-category="mathematics">
+                <h3><a href="../documents/Mathematik/Mathematik.html">Mathematik - Formelsammlung WISS 2022</a></h3>
+                <p>WISS Mathematik Formelsammlung für das Jahr 2022.</p>
+            </div>
+
+            <!-- More modules can be added here in the same format -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Nicht von <span class="wiss-link">WISS</span> gesponsert, erstellt oder unterstützt.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const popup = document.getElementById("popup");
+            const closeButton = document.getElementById("close-popup");
+            const countdownText = document.getElementById("countdown");
+    
+            popup.style.display = "flex"; // Popup anzeigen
+            
+            // Sanfte Einblendung mit Animation
+            setTimeout(() => {
+                popup.style.opacity = "1";
+                popup.style.transform = "translateY(0)";
+            }, 50);
+    
+            // Countdown Timer
+            let seconds = 5;
+            countdownText.textContent = `(${seconds}s)`;
+    
+            const countdownInterval = setInterval(() => {
+                seconds--;
+                countdownText.textContent = `(${seconds}s)`;
+    
+                if (seconds <= 0) {
+                    clearInterval(countdownInterval);
+                    closeButton.disabled = false;
+                    closeButton.removeAttribute("disabled"); // WICHTIG: Entfernt das "disabled"-Attribut
+                    closeButton.textContent = "Verstanden";
+                    closeButton.style.background = "#00ffcc";
+                    closeButton.style.cursor = "pointer";
+                }
+            }, 1000);
+    
+            // Event-Listener für Button (Popup schließen)
+            closeButton.addEventListener("click", function() {
+                popup.style.opacity = "0";
+                popup.style.transform = "translateY(-20px)";
+                setTimeout(() => {
+                    popup.style.display = "none";
+                }, 300); // Nach 300ms endgültig ausblenden
+            });
+        });
+    
+        function searchDocuments() {
+            const searchValue = document.getElementById('search').value.toLowerCase();
+            const cards = document.querySelectorAll('.tool-card');
+            
+            cards.forEach(card => {
+                const moduleName = card.querySelector('h3').textContent.toLowerCase();
+                card.style.display = moduleName.includes(searchValue) ? "block" : "none";
+            });
+        }
+    </script>                   
+</body>
+</html>

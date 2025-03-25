@@ -493,5 +493,13 @@ footer {
     margin-top: 10px;
 }
 
+/* For modules marked as not in use (red glow) */
+.tool-card.not-inuse {
+    box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.5); /* Weicher roter Glow */
+}
+
+.tool-card.not-inuse:hover {
+    box-shadow: 0 0 10px 4px rgba(255, 0, 0, 0.8); /* Stärkerer Glow beim Hover */
+}
 
 /* Was luegsch da ihne du Vogel au hoffnige usse finde oder */
